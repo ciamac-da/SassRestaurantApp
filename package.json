@@ -1,0 +1,23 @@
+{
+  "name": "SassRestaurantApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass-node -o css scss/style.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciamac-da/SassRestaurantApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ciamac-da/SassRestaurantApp/issues"
+  },
+  "homepage": "https://github.com/ciamac-da/SassRestaurantApp#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
