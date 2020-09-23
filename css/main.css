@@ -1,9 +1,11 @@
-html {
-  font-family: "Kufam", cursive;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  background: "red";
+  font-family: "Kufam", cursive;
+  background: #262626;
 }
 
 /*# sourceMappingURL=main.css.map */

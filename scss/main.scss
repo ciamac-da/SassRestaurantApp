@@ -1,9 +1,3 @@
-html{
-    font-family: 'Kufam', cursive;
-  
-  }
-  
-  body {
-    background: "red";
-  }
-  
+@import "base";
+@import "layout";
+@import "components";
