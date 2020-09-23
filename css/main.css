@@ -8,4 +8,11 @@ body {
   background: #262626;
 }
 
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
 /*# sourceMappingURL=main.css.map */
