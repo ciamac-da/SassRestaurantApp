@@ -1,9 +1,8 @@
-
 .logo {
     @include flexLayout;
     font-size: 70px;
     color: map-get($colors, primary);
-    
+
 
     .logo-img {
         border-radius: 15px;
@@ -18,5 +17,8 @@
     @include flexLayout;
     flex-direction: column;
     text-align: center;
+
+    &:hover {
+        color: map-get($colors, orange);
+    }
 }
-    

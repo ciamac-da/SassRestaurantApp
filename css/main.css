@@ -22,6 +22,12 @@ body {
   transform: translate(-50%, -50%);
   color: white;
 }
+.header-banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .logo {
   display: flex;
@@ -43,6 +49,9 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+.logo-text:hover {
+  color: orange;
 }
 
 /*# sourceMappingURL=main.css.map */

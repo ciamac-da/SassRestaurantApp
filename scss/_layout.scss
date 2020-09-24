@@ -5,10 +5,10 @@
     background: linear-gradient(rgba(map-get($colors, black), 0.8),rgba(map-get($colors, black), 0.5)),url("../images/bg.jpg") center no-repeat;
     background-size: cover;
     .brand{
-     position: absolute;
-     top: 15%;
-     left: 50%;
-     transform: translate(-50%,-50%);
+     @include centering(15%);
      color: white;
+    }
+    &-banner{
+        @include centering(50%);
     }
 }

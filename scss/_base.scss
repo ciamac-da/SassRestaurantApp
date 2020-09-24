@@ -2,12 +2,20 @@ $colors: (
   dark: #262626,
   black : #000,
   primary: rgb(167, 164, 17),
+  orange: orange,
 
 );
 @mixin flexLayout {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin centering($topValue){
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 * {
