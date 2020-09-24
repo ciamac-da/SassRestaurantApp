@@ -28,13 +28,18 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #ffffff;
+  color: orange;
 }
 .header-banner:hover {
-  color: orange;
+  color: #ffffff;
 }
 .header-banner button {
   background-color: orange;
+  color: #ffffff;
+}
+.header-banner button:hover {
+  color: orange;
+  background-color: #ffffff;
 }
 
 .about-us {
@@ -56,6 +61,11 @@ body {
 }
 .about-us button {
   margin-top: 10px;
+  color: #ffffff;
+}
+.about-us button:hover {
+  color: orange;
+  background-color: #ffffff;
 }
 
 .logo {

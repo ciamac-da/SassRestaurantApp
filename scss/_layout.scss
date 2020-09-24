@@ -11,12 +11,17 @@
     &-banner{
         @include centering($num*50%);
         text-align: center;
-        color: map-get($colors, light );
+        color: map-get($colors, orng );
         &:hover{
-            color: map-get($colors, orng );
+            color: map-get($colors, light );
         }
         button{
             background-color: map-get($colors , orng );
+            color: map-get($colors, light );
+            &:hover{
+            color: map-get($colors , orng );
+            background-color: map-get($colors , light );
+            }
         }
     }
 }
@@ -44,5 +49,10 @@
     }
     button{
         margin-top: $size*$num*1;
+        color: map-get($colors, light );
+        &:hover{
+            color: map-get($colors , orng );
+            background-color: map-get($colors , light );
+            }
     }
 }
