@@ -1,6 +1,13 @@
 .header{
     width: 100%;
     height: 100vh;
-    background: url("../images/bg.jpg") center no-repeat;
+    position: relative;
+    background: linear-gradient(rgba($color-black, 0.8),rgba($color-black, 0.6)),url("../images/bg.jpg") center no-repeat;
     background-size: cover;
+    .brand{
+     position: absolute;
+     top: 15%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    }
 }
