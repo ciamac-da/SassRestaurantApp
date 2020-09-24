@@ -1,15 +1,15 @@
 .header{
-    width: 100%;
-    height: 100vh;
+    width: $num*100%;
+    height: $num*100vh;
     position: relative;
-    background: linear-gradient(rgba(map-get($colors, pure-dark), 0.8),rgba(map-get($colors, pure-dark), 0.5)),url("../images/bg.jpg") center no-repeat;
+    background: linear-gradient(rgba(map-get($colors, pure-dark), $num*0.8),rgba(map-get($colors, pure-dark), $num*0.5)),url("../images/bg.jpg") center no-repeat;
     background-size: cover;
     .brand{
-     @include centering(20%);
+     @include centering($num*20%);
      color: map-get($colors , orng );
     }
     &-banner{
-        @include centering(50%);
+        @include centering($num*50%);
         text-align: center;
         color: map-get($colors, light );
         &:hover{
@@ -23,13 +23,26 @@
 
 
 .about-us{
-    height: 90vh;
+    height: $num*90vh;
     display: flex;
     align-content: center;
+    flex-direction: column;
+    margin: $size*$num*2;
     &-left{
         img{
-            width: $size*10;
-            height: $size*10;
+            width: $size*$num*8;
+            height: $size*$num*8;
         }
+    }
+.stars{
+    h5{
+        margin: $num*0;
+    }
+    }
+    .star{
+        color:map-get($colors, gld );
+    }
+    button{
+        margin-top: $size*$num*1;
     }
 }

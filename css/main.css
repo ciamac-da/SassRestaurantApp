@@ -41,10 +41,21 @@ body {
   height: 90vh;
   display: flex;
   align-content: center;
+  flex-direction: column;
+  margin: 20px;
 }
 .about-us-left img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
+}
+.about-us .stars h5 {
+  margin: 0;
+}
+.about-us .star {
+  color: gold;
+}
+.about-us button {
+  margin-top: 10px;
 }
 
 .logo {

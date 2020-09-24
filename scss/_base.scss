@@ -1,4 +1,4 @@
-
+$num:1;
 $size:10px;
 
 $colors: (
@@ -7,8 +7,9 @@ $colors: (
   primary: rgb(167, 164, 17),
   orng: orange,
   light: #ffffff,
-
+  gld: gold,
 );
+
 @mixin flexLayout {
   display: flex;
   justify-content: center;
@@ -18,13 +19,13 @@ $colors: (
 @mixin centering($topValue){
   position: absolute;
   top: $topValue;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: $num*50%;
+  transform: translate( -$num*50%, -$num*50%);
 }
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: $num*0;
+    margin: $num*0;
     font-family: 'Kufam', cursive;
 }
 
