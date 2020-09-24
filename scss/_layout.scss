@@ -5,7 +5,7 @@
     background: linear-gradient(rgba(map-get($colors, pure-dark), 0.8),rgba(map-get($colors, pure-dark), 0.5)),url("../images/bg.jpg") center no-repeat;
     background-size: cover;
     .brand{
-     @include centering(15%);
+     @include centering(20%);
      color: map-get($colors , orng );
     }
     &-banner{
