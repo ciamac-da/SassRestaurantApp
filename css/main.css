@@ -1,10 +1,10 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Kufam", cursive;
 }
 
 body {
-  font-family: "Kufam", cursive;
   background: #262626;
 }
 
@@ -20,13 +20,18 @@ body {
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: orange;
 }
 .header-banner {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+}
+.header-banner:hover {
+  color: orange;
 }
 
 .logo {

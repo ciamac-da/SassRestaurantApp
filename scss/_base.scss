@@ -1,8 +1,9 @@
 $colors: (
   dark: #262626,
-  black : #000,
+  pure-dark : #000,
   primary: rgb(167, 164, 17),
-  orange: orange,
+  orng: orange,
+  light: #ffffff,
 
 );
 @mixin flexLayout {
@@ -21,11 +22,11 @@ $colors: (
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Kufam', cursive;
 }
 
 
 body {
-    font-family: 'Kufam', cursive;
       background: map-get($colors, dark );
     }
     
