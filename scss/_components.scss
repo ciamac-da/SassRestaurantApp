@@ -1,0 +1,12 @@
+.logo{
+    font-size: 70px;
+    color: $color-primary;
+    display: flex;
+    justify-content: center;
+    .logo-img{
+        border-radius: 15px;
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+    }
+}
