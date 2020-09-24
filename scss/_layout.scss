@@ -20,3 +20,16 @@
         }
     }
 }
+
+
+.about-us{
+    height: 90vh;
+    display: flex;
+    align-content: center;
+    &-left{
+        img{
+            width: $size*10;
+            height: $size*10;
+        }
+    }
+}

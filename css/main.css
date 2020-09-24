@@ -37,6 +37,16 @@ body {
   background-color: orange;
 }
 
+.about-us {
+  height: 90vh;
+  display: flex;
+  align-content: center;
+}
+.about-us-left img {
+  width: 100px;
+  height: 100px;
+}
+
 .logo {
   display: flex;
   justify-content: center;

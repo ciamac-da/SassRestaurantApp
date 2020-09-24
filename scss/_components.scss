@@ -1,14 +1,14 @@
 .logo {
     @include flexLayout;
-    font-size: 70px;
+    font-size: $size*7;
     color: map-get($colors, primary);
 
 
     .logo-img {
-        border-radius: 15px;
-        height: 100px;
-        width: 100px;
-        margin: 5px;
+        border-radius: $size*1.5;
+        height: $size*10;
+        width: $size*10;
+        margin: $size*0.5;
 
     }
 }
