@@ -1,7 +1,14 @@
-$color-dark : #262626;
-$color-black : #000;
-$color-primary: rgb(167, 164, 17);
+$colors: (
+  dark: #262626,
+  black : #000,
+  primary: rgb(167, 164, 17),
 
+);
+@mixin flexLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 * {
     padding: 0;
@@ -11,7 +18,7 @@ $color-primary: rgb(167, 164, 17);
 
 body {
     font-family: 'Kufam', cursive;
-      background: $color-dark;
+      background: map-get($colors, dark );
     }
     
     

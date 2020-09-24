@@ -24,16 +24,25 @@ body {
 }
 
 .logo {
-  font-size: 70px;
-  color: #a7a411;
   display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  color: #a7a411;
 }
 .logo .logo-img {
   border-radius: 15px;
   height: 100px;
   width: 100px;
   margin: 5px;
+}
+
+.logo-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */
