@@ -15,5 +15,8 @@
         &:hover{
             color: map-get($colors, orng );
         }
+        button{
+            background-color: map-get($colors , orng );
+        }
     }
 }
