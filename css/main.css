@@ -105,6 +105,10 @@ body {
   width: 33.33%;
   height: 30vw;
   position: relative;
+  overflow: hidden;
+}
+.card:hover .card-overlay {
+  left: 0;
 }
 .card-overlay {
   width: 100%;
@@ -115,10 +119,11 @@ body {
   flex-direction: column;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   background-color: rgba(167, 164, 17, 0.6);
   color: #ffffff;
   z-index: 10;
+  transition: left 0.5s;
 }
 .card-overlay-heading {
   font-size: 50px;

@@ -30,6 +30,11 @@
     width: 33.33% ;
     height: 30vw;
     position: relative;
+    overflow: hidden;
+
+    &:hover .card-overlay{
+        left: 0;
+    }
 
     &-overlay{
         @include w-h;
@@ -37,10 +42,11 @@
         flex-direction: column; 
         position: absolute;
         top: 0;
-        left: 0;
+        left: -$num*100%;
         background-color: rgba( map-get($colors,primary) , .6);
         color: map-get($colors, light );
         z-index: 10;
+        transition: left .5s;
         
         &-heading{
             font-size: $num*$size*5;
