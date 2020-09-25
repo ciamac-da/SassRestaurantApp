@@ -32,12 +32,15 @@
     position: relative;
 
     &-overlay{
+        @include w-h;
+        @include flexLayout;
+        flex-direction: column; 
         position: absolute;
-        @include w-h; 
         top: 0;
         left: 0;
         background-color: rgba( map-get($colors,primary) , .6);
         color: map-get($colors, light );
+        z-index: 10;
     }
 
     &-img{
