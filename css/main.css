@@ -68,6 +68,11 @@ body {
   background-color: #ffffff;
 }
 
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -94,6 +99,11 @@ body {
 }
 .logo-text h1 {
   font-weight: bold;
+}
+
+.card {
+  width: 33.33%;
+  height: 30vw;
 }
 
 /*# sourceMappingURL=main.css.map */
