@@ -80,6 +80,23 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.footer-header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 70px;
+}
+.footer-social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.footer-social-media-item {
+  list-style: none;
+}
+.footer-social-media-link {
+  text-decoration: none;
+}
 
 .logo {
   display: flex;

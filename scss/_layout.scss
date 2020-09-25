@@ -67,4 +67,25 @@
     padding: $num*$size*7 0;
     @include flexLayout;
     flex-direction: column;
+
+    &-header{
+        display: flex;
+        align-items: center;
+        padding-bottom: $num*$size*7;
+    }
+
+    &-social-media{
+        display: flex;
+        width: $num*$size*30;
+        justify-content: space-between;
+        margin-bottom: $num*$size*7;
+       
+    &-item{
+        list-style: none;
+    }
+    &-link{
+        text-decoration: none;
+    }
+
+    }
 }
