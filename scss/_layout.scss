@@ -63,3 +63,8 @@
 
     }
 }
+.footer{
+    padding: $num*$size*7 0;
+    @include flexLayout;
+    flex-direction: column;
+}

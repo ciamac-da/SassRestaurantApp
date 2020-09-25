@@ -73,6 +73,14 @@ body {
   flex-wrap: wrap;
 }
 
+.footer {
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .logo {
   display: flex;
   justify-content: center;
