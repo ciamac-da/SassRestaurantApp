@@ -41,6 +41,24 @@
         background-color: rgba( map-get($colors,primary) , .6);
         color: map-get($colors, light );
         z-index: 10;
+        
+        &-heading{
+            font-size: $num*$size*5;
+        }
+
+        &-paragraph{
+            font-size: $num*$size*3;
+            margin-bottom: $num*$size*2;
+        }
+
+        &-btn{
+            &:hover {
+                color: map-get($colors, grn) !important;
+                font-weight: bolder;
+                background-color: map-get($colors, light) !important;
+
+            }
+        }
     }
 
     &-img{
