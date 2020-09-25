@@ -29,4 +29,21 @@
 .card{
     width: 33.33% ;
     height: 30vw;
+    position: relative;
+
+    &-overlay{
+        position: absolute;
+        @include w-h; 
+        top: 0;
+        left: 0;
+        background-color: rgba( map-get($colors,primary) , .6);
+        color: map-get($colors, light );
+    }
+
+    &-img{
+        @include w-h; 
+        object-fit: cover;
+        opacity: 0.5;
+
+    }
 }

@@ -23,6 +23,11 @@ $colors: (
   transform: translate( -$num*50%, -$num*50%);
 }
 
+@mixin w-h {
+  width: 100%;
+  height: 100%;
+}
+
 * {
     padding: $num*0;
     margin: $num*0;
