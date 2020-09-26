@@ -11,7 +11,7 @@
             height: 100vh;
             background-color: map-get($colors, dark );
             position: fixed;
-            left: 0;
+            left: -50vw;
 
             .left-img{
                 width: $num*50%;
@@ -39,7 +39,7 @@
             height: 100vh;
             background-color: map-get($colors, pure-dark );
             position: fixed;
-            right: 0;
+            right: -50vw;
             @include flexLayout;
         }
 

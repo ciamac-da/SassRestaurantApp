@@ -1,3 +1,23 @@
+.hamburger-menu{
+    width: $size*4;
+    height: $size*4;
+    background-color: map-get($colors, orng );
+    position:fixed;
+    top: $num*10%;
+    right: $num*5%;
+
+    .menu{
+        @include w-h;
+
+        &-line{
+            width: $num*100%;
+            height: $size*.4;
+            background-color: map-get($colors, primary );
+        }
+    }
+}
+
+
 .logo {
     @include flexLayout;
     font-size: $size*$num*7;
