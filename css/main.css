@@ -58,9 +58,14 @@ body {
   font-size: 50px;
   color: #ffffff;
   text-decoration: none;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.7s;
 }
 .navbar-navigation .nav-list-link:hover {
   color: orange;
+  letter-spacing: 4px;
 }
 
 .header {

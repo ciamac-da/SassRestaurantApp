@@ -52,8 +52,13 @@
                 font-size: $size*5;
                 color: map-get($colors, light );
                 text-decoration: none;
+                display: block;
+                margin: $size*2;
+                text-align: center;
+                transition: all .7s;
                 &:hover{
                 color: map-get($colors, orng );
+                letter-spacing: $size*.4;
                 }
             }
         }
