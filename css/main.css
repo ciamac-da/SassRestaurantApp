@@ -56,6 +56,7 @@ body {
 }
 .navbar-navigation .nav-list-item {
   list-style: none;
+  text-shadow: 1px 1px orange;
 }
 .navbar-navigation .nav-list-link {
   font-size: 30px;

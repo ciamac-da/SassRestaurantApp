@@ -1,58 +1,62 @@
-.navbar{
+.navbar {
     position: relative;
     z-index: 200;
     margin: $num*$size*-.8;
 
-    &-navigation{
+    &-navigation {
         display: flex;
 
-        &-left{
+        &-left {
             width: 50vw;
             height: 100vh;
-            background-color: map-get($colors, dark );
+            background-color: map-get($colors, dark);
             position: fixed;
             left: -50vw;
-            transition: left .8s cubic-bezier(1,0,0,1);
+            transition: left .8s cubic-bezier(1, 0, 0, 1);
 
-            .left-img{
+            .left-img {
                 width: $num*50%;
                 position: absolute;
-                box-shadow: 0 $size*1.5 $size*6 rgba(map-get($colors,pure-dark), .4);
+                box-shadow: 0 $size*1.5 $size*6 rgba(map-get($colors, pure-dark), .4);
                 opacity: .7;
                 border-radius: $size;
             }
-            .left-img-1{
+
+            .left-img-1 {
                 top: 15%;
                 left: 15%;
             }
-            .left-img-2{
+
+            .left-img-2 {
                 top: 35%;
                 left: 25%;
             }
-            .left-img-3{
+
+            .left-img-3 {
                 top: 55%;
                 left: 35%;
             }
         }
 
-        &-right{
+        &-right {
             width: 50vw;
             height: 100vh;
-            background-color: map-get($colors, pure-dark );
+            background-color: map-get($colors, pure-dark);
             position: fixed;
             right: -50vw;
             @include flexLayout;
-            transition: right .8s cubic-bezier(1,0,0,1);
+            transition: right .8s cubic-bezier(1, 0, 0, 1);
         }
 
-        .nav-list{
-            &-item{
+        .nav-list {
+            &-item {
                 list-style: none;
+                text-shadow: $size*.1 $size*.1 map-get($colors, orng );
             }
 
-            &-link{
+            &-link {
                 font-size: $size*3;
-                color: map-get($colors, light );
+                color: map-get($colors, light);
                 text-decoration: none;
                 display: block;
                 margin: $size*2;
@@ -61,139 +65,159 @@
                 @include mediaNav640;
                 @include mediaNav375;
 
-                &:hover{
-                color: map-get($colors, orng );
-                letter-spacing: $size*.4;
+                &:hover {
+                    color: map-get($colors, orng);
+                    letter-spacing: $size*.4;
                 }
             }
         }
     }
 }
 
-.checkbox:checked ~ .navbar-navigation .navbar-navigation-left{
+.checkbox:checked~.navbar-navigation .navbar-navigation-left {
     left: 0;
 }
 
-.checkbox:checked ~ .navbar-navigation .navbar-navigation-right{
+.checkbox:checked~.navbar-navigation .navbar-navigation-right {
     right: 0;
 }
 
-.checkbox:checked ~ .hamburger-menu .menu{
+.checkbox:checked~.hamburger-menu .menu {
     transform: rotateZ(90deg);
 }
 
-.checkbox:checked ~ .hamburger-menu .menu-line-1{
+.checkbox:checked~.hamburger-menu .menu-line-1 {
     transform: rotateZ(-40deg);
 }
-.checkbox:checked ~ .hamburger-menu .menu-line-2{
+
+.checkbox:checked~.hamburger-menu .menu-line-2 {
     opacity: 0;
 }
-.checkbox:checked ~ .hamburger-menu .menu-line-3{
+
+.checkbox:checked~.hamburger-menu .menu-line-3 {
     transform: rotateZ(40deg);
 }
-.header{
+
+.header {
     width: $num*100%;
     height: $num*100vh;
     position: relative;
-    background: linear-gradient(rgba(map-get($colors, pure-dark), $num*0.8),rgba(map-get($colors, pure-dark), $num*0.5)),url("../images/bg.jpg") center no-repeat;
+    background: linear-gradient(rgba(map-get($colors, pure-dark), $num*0.8), rgba(map-get($colors, pure-dark), $num*0.5)), url("../images/bg.jpg") center no-repeat;
     background-size: cover;
-    .brand{
-     @include centering($num*20%);
-     color: map-get($colors , orng );
+
+    .brand {
+        @include centering($num*20%);
+        color: map-get($colors, orng);
     }
-    &-banner{
+
+    &-banner {
         @include centering($num*50%);
         text-align: center;
-        color: map-get($colors, orng );
-        &:hover{
-            color: map-get($colors, light );
+        color: map-get($colors, orng);
+
+        &:hover {
+            color: map-get($colors, light);
         }
-        button{
-            background-color: map-get($colors , orng );
-            color: map-get($colors, light );
-            &:hover{
-            color: map-get($colors , orng );
-            background-color: map-get($colors , light );
+
+        button {
+            background-color: map-get($colors, orng);
+            color: map-get($colors, light);
+
+            &:hover {
+                color: map-get($colors, orng);
+                background-color: map-get($colors, light);
             }
         }
     }
 }
 
 
-.about-us{
+.about-us {
     height: $num*50vh;
     display: flex;
     align-content: center;
     flex-direction: column;
     margin: $size*$num*.1;
-    background-color: map-get($colors, orng );
+    background-color: map-get($colors, orng);
     @include mediaRev640;
-    &-left{
-        img{
+
+    &-left {
+        img {
             width: $size*$num*8;
             height: $size*$num*8;
         }
     }
-    &-right{
+
+    &-right {
         margin: $num*$size*2;
-        .main-heading{
-    text-shadow: $size*.2 $size*.2 map-get($colors, pure-dark );
+
+        .main-heading {
+            text-shadow: $size*.2 $size*.2 map-get($colors, pure-dark);
 
         }
     }
-.stars{
-    h5{
-        margin: $num*0;
-    text-shadow: $size*.1 $size*.1 map-get($colors, pure-dark );
 
+    .stars {
+        h5 {
+            margin: $num*0;
+            text-shadow: $size*.1 $size*.1 map-get($colors, pure-dark);
+
+        }
     }
+
+    .star {
+        color: map-get($colors, gld);
     }
-    .star{
-        color:map-get($colors, gld );
-    }
-    button{
+
+    button {
         margin-top: $size*$num*1;
-        color: map-get($colors, light );
-        &:hover{
-            color: map-get($colors , orng );
-            background-color: map-get($colors , light );
-            }
+        color: map-get($colors, light);
+
+        &:hover {
+            color: map-get($colors, orng);
+            background-color: map-get($colors, light);
+        }
     }
 }
-.gallery{
-    .cards-wrapper{
+
+.gallery {
+    .cards-wrapper {
         display: flex;
         flex-wrap: wrap;
     }
 }
-.footer{
+
+.footer {
     padding: $num*$size*7 0;
     @include flexLayout;
     flex-direction: column;
-    background-color: map-get($colors, orng );
+    background-color: map-get($colors, orng);
 
-    &-header{
+    &-header {
         display: flex;
         align-items: center;
         padding-bottom: $num*$size*7;
     }
 
-    &-social-media{
+    &-social-media {
         display: flex;
         width: $num*$size*30;
         justify-content: space-between;
         margin-bottom: $num*$size*7;
-       
-    &-item{
-        list-style: none;
+
+        &-item {
+            list-style: none;
+        }
+
+        &-link {
+            text-decoration: none;
+        }
     }
-    &-link{
-        text-decoration: none;
-    }
-    }
-    .footer-copyright{
+
+    .footer-copyright {
         @include flexLayout;
-        &-paragraph{
+
+        &-paragraph {
             text-align: center;
         }
     }
