@@ -75,7 +75,19 @@
     right: 0;
 }
 
+.checkbox:checked ~ .hamburger-menu .menu{
+    transform: rotateZ(90deg);
+}
 
+.checkbox:checked ~ .hamburger-menu .menu-line-1{
+    transform: rotateZ(-40deg);
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-2{
+    opacity: 0;
+}
+.checkbox:checked ~ .hamburger-menu .menu-line-3{
+    transform: rotateZ(40deg);
+}
 .header{
     width: $num*100%;
     height: $num*100vh;

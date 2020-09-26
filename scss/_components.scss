@@ -13,12 +13,15 @@
         justify-content: space-around;
         color: map-get($colors, orng );
         cursor: pointer;
+        transition: transform .5s;
 
 
         &-line{
             width: $num*100%;
             height: $size*.4;
             background-color: map-get($colors, orng );
+            transition: all .5s .5s;
+            transform-origin: right;
         }
     }
 }
