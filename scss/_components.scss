@@ -2,8 +2,8 @@
     width: $size*4;
     height: $size*4;
     position:fixed;
-    top: $num*10%;
-    right: $num*5%;
+    top: $num*4%;
+    right: $num*3%;
     z-index: 300;
 
     .menu{
@@ -79,17 +79,28 @@
         
         &-heading{
             font-size: $num*$size*5;
+            @include mediaA920;
+            @include mediaA560;
+
+
         }
 
         &-paragraph{
             font-size: $num*$size*3;
             margin-bottom: $num*$size*2;
+            @include mediaB920;
+            @include mediaB560;
+
+
         }
 
         &-btn{
+            @include mediaBtn920;
+            @include mediaBtn560;
+            font-size: $num*$size*2;
+            
             &:hover {
                 color: map-get($colors, grn) !important;
-                font-weight: bolder;
                 background-color: map-get($colors, light) !important;
 
             }

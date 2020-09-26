@@ -11,6 +11,43 @@ $colors: (
   grn: green,
 );
 
+@mixin mediaA920 {
+  @media(max-width: $size*92){
+    font-size: $size*3;
+}
+}
+@mixin mediaB920 {
+  @media(max-width: $size*92){
+    font-size: $size*2 !important;
+}
+}
+
+@mixin mediaBtn920 {
+  @media(max-width: $size*92){
+max-width: $size*8;    
+}
+}
+
+@mixin mediaA560 {
+  @media(max-width: $size*56){
+    font-size: $size*2;
+}
+}
+
+@mixin mediaB560 {
+  @media(max-width: $size*56){
+    font-size: $size*1;
+}
+}
+
+@mixin mediaBtn560 {
+  @media(max-width: $size*56){
+max-width: $size*5;
+max-height: $size*2;    
+font-size: $size*.8;
+}
+}
+
 @mixin flexLayout {
   display: flex;
   justify-content: center;

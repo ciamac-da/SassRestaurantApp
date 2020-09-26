@@ -188,8 +188,8 @@ body {
   width: 40px;
   height: 40px;
   position: fixed;
-  top: 10%;
-  right: 5%;
+  top: 4%;
+  right: 3%;
   z-index: 300;
 }
 .hamburger-menu .menu {
@@ -265,13 +265,47 @@ body {
 .card-overlay-heading {
   font-size: 50px;
 }
+@media (max-width: 920px) {
+  .card-overlay-heading {
+    font-size: 30px;
+  }
+}
+@media (max-width: 560px) {
+  .card-overlay-heading {
+    font-size: 20px;
+  }
+}
 .card-overlay-paragraph {
   font-size: 30px;
   margin-bottom: 20px;
 }
+@media (max-width: 920px) {
+  .card-overlay-paragraph {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 560px) {
+  .card-overlay-paragraph {
+    font-size: 10px;
+  }
+}
+.card-overlay-btn {
+  font-size: 20px;
+}
+@media (max-width: 920px) {
+  .card-overlay-btn {
+    max-width: 80px;
+  }
+}
+@media (max-width: 560px) {
+  .card-overlay-btn {
+    max-width: 50px;
+    max-height: 20px;
+    font-size: 8px;
+  }
+}
 .card-overlay-btn:hover {
   color: green !important;
-  font-weight: bolder;
   background-color: #ffffff !important;
 }
 .card-img {
