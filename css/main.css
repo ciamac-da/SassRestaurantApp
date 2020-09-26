@@ -25,6 +25,9 @@ body {
 .navbar-navigation-left .left-img {
   width: 50%;
   position: absolute;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.4);
+  opacity: 0.7;
+  border-radius: 10px;
 }
 .navbar-navigation-left .left-img-1 {
   top: 15%;
@@ -41,9 +44,23 @@ body {
 .navbar-navigation-right {
   width: 50vw;
   height: 100vh;
-  background-color: #262626;
+  background-color: #000;
   position: fixed;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-navigation .nav-list-item {
+  list-style: none;
+}
+.navbar-navigation .nav-list-link {
+  font-size: 50px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navbar-navigation .nav-list-link:hover {
+  color: orange;
 }
 
 .header {

@@ -16,6 +16,9 @@
             .left-img{
                 width: $num*50%;
                 position: absolute;
+                box-shadow: 0 $size*1.5 $size*6 rgba(map-get($colors,pure-dark), .4);
+                opacity: .7;
+                border-radius: $size;
             }
             .left-img-1{
                 top: 15%;
@@ -34,9 +37,25 @@
         &-right{
             width: 50vw;
             height: 100vh;
-            background-color: map-get($colors, dark );
+            background-color: map-get($colors, pure-dark );
             position: fixed;
             right: 0;
+            @include flexLayout;
+        }
+
+        .nav-list{
+            &-item{
+                list-style: none;
+            }
+
+            &-link{
+                font-size: $size*5;
+                color: map-get($colors, light );
+                text-decoration: none;
+                &:hover{
+                color: map-get($colors, orng );
+                }
+            }
         }
     }
 }
