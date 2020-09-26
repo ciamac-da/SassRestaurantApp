@@ -1,6 +1,7 @@
 .navbar{
     position: relative;
     z-index: 200;
+    margin: $num*$size*-.8;
 
     &-navigation{
         display: flex;

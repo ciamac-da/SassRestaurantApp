@@ -19,7 +19,7 @@
         &-line{
             width: $num*100%;
             height: $size*.4;
-            background-color: map-get($colors, orng );
+            background-color: map-get($colors, light );
             transition: all .5s .5s;
             transform-origin: right;
         }
