@@ -8,6 +8,44 @@ body {
   background: #262626;
 }
 
+.navbar {
+  position: relative;
+  z-index: 200;
+}
+.navbar-navigation {
+  display: flex;
+}
+.navbar-navigation-left {
+  width: 50vw;
+  height: 100vh;
+  background-color: #262626;
+  position: fixed;
+  left: 0;
+}
+.navbar-navigation-left .left-img {
+  width: 50%;
+  position: absolute;
+}
+.navbar-navigation-left .left-img-1 {
+  top: 15%;
+  left: 15%;
+}
+.navbar-navigation-left .left-img-2 {
+  top: 35%;
+  left: 25%;
+}
+.navbar-navigation-left .left-img-3 {
+  top: 55%;
+  left: 35%;
+}
+.navbar-navigation-right {
+  width: 50vw;
+  height: 100vh;
+  background-color: #262626;
+  position: fixed;
+  right: 0;
+}
+
 .header {
   width: 100%;
   height: 100vh;

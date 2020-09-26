@@ -1,3 +1,47 @@
+
+.navbar{
+    position: relative;
+    z-index: 200;
+
+    &-navigation{
+        display: flex;
+
+        &-left{
+            width: 50vw;
+            height: 100vh;
+            background-color: map-get($colors, dark );
+            position: fixed;
+            left: 0;
+
+            .left-img{
+                width: $num*50%;
+                position: absolute;
+            }
+            .left-img-1{
+                top: 15%;
+                left: 15%;
+            }
+            .left-img-2{
+                top: 35%;
+                left: 25%;
+            }
+            .left-img-3{
+                top: 55%;
+                left: 35%;
+            }
+        }
+
+        &-right{
+            width: 50vw;
+            height: 100vh;
+            background-color: map-get($colors, dark );
+            position: fixed;
+            right: 0;
+        }
+    }
+}
+
+
 .header{
     width: $num*100%;
     height: $num*100vh;
