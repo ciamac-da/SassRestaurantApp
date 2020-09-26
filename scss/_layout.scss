@@ -12,6 +12,7 @@
             background-color: map-get($colors, dark );
             position: fixed;
             left: -50vw;
+            transition: left .8s cubic-bezier(1,0,0,1);
 
             .left-img{
                 width: $num*50%;
@@ -41,6 +42,7 @@
             position: fixed;
             right: -50vw;
             @include flexLayout;
+            transition: right .8s cubic-bezier(1,0,0,1);
         }
 
         .nav-list{
@@ -49,7 +51,7 @@
             }
 
             &-link{
-                font-size: $size*5;
+                font-size: $size*3;
                 color: map-get($colors, light );
                 text-decoration: none;
                 display: block;
@@ -63,6 +65,14 @@
             }
         }
     }
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-left{
+    left: 0;
+}
+
+.checkbox:checked ~ .navbar-navigation .navbar-navigation-right{
+    right: 0;
 }
 
 

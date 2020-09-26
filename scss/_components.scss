@@ -1,18 +1,24 @@
 .hamburger-menu{
     width: $size*4;
     height: $size*4;
-    background-color: map-get($colors, orng );
     position:fixed;
     top: $num*10%;
     right: $num*5%;
+    z-index: 300;
 
     .menu{
         @include w-h;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: map-get($colors, orng );
+        cursor: pointer;
+
 
         &-line{
             width: $num*100%;
             height: $size*.4;
-            background-color: map-get($colors, primary );
+            background-color: map-get($colors, orng );
         }
     }
 }
