@@ -136,10 +136,16 @@
     }
     &-right{
         margin: $num*$size*2;
+        .main-heading{
+    text-shadow: $size*.2 $size*.2 map-get($colors, pure-dark );
+
+        }
     }
 .stars{
     h5{
         margin: $num*0;
+    text-shadow: $size*.1 $size*.1 map-get($colors, pure-dark );
+
     }
     }
     .star{

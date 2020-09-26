@@ -46,6 +46,7 @@
     @include flexLayout;
     flex-direction: column;
     text-align: center;
+    text-shadow: $size*.5 $size*.5 map-get($colors, pure-dark );
 
     &:hover {
         color: map-get($colors, orng);
@@ -114,43 +115,3 @@
 
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

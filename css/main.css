@@ -159,8 +159,12 @@ body {
 .about-us-right {
   margin: 20px;
 }
+.about-us-right .main-heading {
+  text-shadow: 2px 2px #000;
+}
 .about-us .stars h5 {
   margin: 0;
+  text-shadow: 1px 1px #000;
 }
 .about-us .star {
   color: gold;
@@ -259,6 +263,7 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  text-shadow: 5px 5px #000;
 }
 .logo-text:hover {
   color: orange;
