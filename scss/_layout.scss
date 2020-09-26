@@ -163,10 +163,11 @@
     }
 
     .stars {
-        margin-left: $size*.6;
+        margin-left: $num*$size*.6;
         h5 {
             margin: $num*0;
             text-shadow: $size*.1 $size*.1 map-get($colors, pure-dark);
+            margin-left: $num*$size*.4;
 
         }
     }
