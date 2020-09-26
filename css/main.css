@@ -163,6 +163,14 @@ body {
 .about-us-right .main-heading {
   text-shadow: 2px 2px #000;
 }
+.about-us-right .description {
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+.about-us .stars {
+  margin-left: 6px;
+}
 .about-us .stars h5 {
   margin: 0;
   text-shadow: 1px 1px #000;

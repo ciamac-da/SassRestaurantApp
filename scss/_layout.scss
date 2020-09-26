@@ -155,9 +155,15 @@
             text-shadow: $size*.2 $size*.2 map-get($colors, pure-dark);
 
         }
+        .description{
+            color: map-get($colors, pure-dark );
+            display: flex;
+            justify-content: center;
+        }
     }
 
     .stars {
+        margin-left: $size*.6;
         h5 {
             margin: $num*0;
             text-shadow: $size*.1 $size*.1 map-get($colors, pure-dark);
