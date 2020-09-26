@@ -1,4 +1,3 @@
-
 .navbar{
     position: relative;
     z-index: 200;
@@ -58,6 +57,9 @@
                 margin: $size*2;
                 text-align: center;
                 transition: all .7s;
+                @include mediaNav640;
+                @include mediaNav375;
+
                 &:hover{
                 color: map-get($colors, orng );
                 letter-spacing: $size*.4;
@@ -118,16 +120,21 @@
 
 
 .about-us{
-    height: $num*90vh;
+    height: $num*50vh;
     display: flex;
     align-content: center;
     flex-direction: column;
-    margin: $size*$num*2;
+    margin: $size*$num*.1;
+    background-color: map-get($colors, orng );
+    @include mediaRev640;
     &-left{
         img{
             width: $size*$num*8;
             height: $size*$num*8;
         }
+    }
+    &-right{
+        margin: $num*$size*2;
     }
 .stars{
     h5{
@@ -150,13 +157,13 @@
     .cards-wrapper{
         display: flex;
         flex-wrap: wrap;
-
     }
 }
 .footer{
     padding: $num*$size*7 0;
     @include flexLayout;
     flex-direction: column;
+    background-color: map-get($colors, orng );
 
     &-header{
         display: flex;
@@ -176,6 +183,11 @@
     &-link{
         text-decoration: none;
     }
-
+    }
+    .footer-copyright{
+        @include flexLayout;
+        &-paragraph{
+            text-align: center;
+        }
     }
 }

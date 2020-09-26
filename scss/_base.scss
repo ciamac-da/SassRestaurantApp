@@ -11,11 +11,30 @@ $colors: (
   grn: green,
 );
 
+@mixin mediaNav640 {
+  @media(max-width: $size*64){
+    font-size: $size*2;
+}
+}
+
+@mixin mediaNav375 {
+  @media(max-width: $size*37.5){
+    font-size: $size*1.5;
+}
+}
+
+@mixin mediaRev640 {
+  @media(max-width: $size*64){
+    height: 77vh;
+}
+}
+
 @mixin mediaA920 {
   @media(max-width: $size*92){
     font-size: $size*3;
 }
 }
+
 @mixin mediaB920 {
   @media(max-width: $size*92){
     font-size: $size*2 !important;
