@@ -9,6 +9,8 @@ $colors: (
   light: #ffffff,
   gld: gold,
   grn: green,
+  bl: blue,
+  gry: gray, 
 );
 
 @mixin mediaNav640 {
@@ -95,5 +97,3 @@ font-size: $size*.8;
 body {
       background: map-get($colors, dark );
     }
-  
-    
