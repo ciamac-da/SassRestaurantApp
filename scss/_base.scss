@@ -31,36 +31,42 @@ $colors: (
 }
 }
 
+// the first mediaQuery 920px
 @mixin mediaA920 {
   @media(max-width: $size*92){
     font-size: $size*3;
 }
 }
 
+// the second mediaQuery 920px
 @mixin mediaB920 {
   @media(max-width: $size*92){
     font-size: $size*2 !important;
 }
 }
 
+// Button mediaQuery 920px
 @mixin mediaBtn920 {
   @media(max-width: $size*92){
 max-width: $size*8;    
 }
 }
 
+// the first mediaQuery 560px
 @mixin mediaA560 {
   @media(max-width: $size*56){
     font-size: $size*2;
 }
 }
 
+// the second mediaQuery 560px
 @mixin mediaB560 {
   @media(max-width: $size*56){
     font-size: $size*1;
 }
 }
 
+// button mediaQuery 560px
 @mixin mediaBtn560 {
   @media(max-width: $size*56){
 max-width: $size*5;
@@ -69,6 +75,7 @@ font-size: $size*.8;
 }
 }
 
+// Flexbox
 @mixin flexLayout {
   display: flex;
   justify-content: center;
@@ -81,6 +88,7 @@ font-size: $size*.8;
   left: $num*50%;
   transform: translate( -$num*50%, -$num*50%);
 }
+
 
 @mixin w-h {
   width: 100%;
